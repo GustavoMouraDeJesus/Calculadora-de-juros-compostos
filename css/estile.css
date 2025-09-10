@@ -2,7 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 body{
-    background-color: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    background: linear-gradient(135deg, #1DB584 0%, #FF6B9D 100%);
+    min-height: 100vh;
+    color: #333;
+}
+header{
+    width: 100%;
+    
+    
+}
+.logo{
+    position: relative;
+    margin: 1% 2%;
+    width: 20%;
+    height: 10vh;
+}
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-left: 30%;
+    
 }
