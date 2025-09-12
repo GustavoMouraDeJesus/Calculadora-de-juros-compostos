@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* Aqui começa o css reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
+/* Aqui termina o css reset */
+/* Aqui começa a config do site */
 body{
-    background: linear-gradient(135deg, #1DB584 0%, #FF6B9D 100%);
-    min-height: 100vh;
+    background: linear-gradient(135deg, #1DB584 0%, #FF6B9D 130%);
+    min-height: 300vh;
     color: #333;
 }
+/* Aqui termina a config do site */
+/* Aqui começa o cabeçalho do site */
 header{
     width: 100%;
     height: 10vh;
@@ -16,9 +21,9 @@ header{
 }
 .logo{
     position: relative;
-    margin: 1.5% 2%;
-    width: 20%;
-    height: 10vh;
+    margin: 1% 2%;
+    width: 13%;
+    height: 7vh;
 }
 nav{
     position: relative;
@@ -26,17 +31,210 @@ nav{
     justify-content: space-around;
     width: 70%;
     margin-left: 30%;
-    margin-top: -6.7%;
+    margin-top: -4%;
 }
 nav a{
-    width: 180px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    width: 18%;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     color: whitesmoke;
-    background-color: transparent;
-    border: solid black 3px;
-    border-radius: 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
+nav a:hover{
+    background: rgba(255,255,255,0.2);
+}
+/* Aqui termina o cabeçalho */
+/* Aqui começa o banner do site */
+.container{
+    margin: 0 auto;
+    padding: 2rem;
+}
+.banner{
+    background: linear-gradient(135deg, #ff6b9d 0%, #ffb800 100%);
+    border-radius: 30px;
+    padding: 2rem 2rem 0rem 2rem;
+    margin: 1rem 0;
+    position: relative;
+    overflow: hidden;
+}
+.banner::before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    top: -100px;
+    right: -100px;
+}
+.banner::after{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    bottom: -75px;
+    left: -75px;
+}
+.titleabnner{
+    font-family: "Nunito", sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 5%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 3);
+}
+.paragrafobanner{
+    font-family: "Nunito", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: whitesmoke;
+    margin-left: 5%;
+    opacity: 0.9;
+}
+.imgbanner{
+    margin-left: 75%;
+    margin-top: -16%;
+}
+/* Aqui termina o banner do site */
+/* Aqui começa as dúvidas */
+section{
+    display: flex;
+    justify-content: space-around;
+}
+section div{
+    width: 25%;
+    height: 350px;
+    margin-top: 5%;
+    float: left;
+}
+.resposta1 img{
+    margin-top: -25%;
+    display: flex;
+    margin-left: 31%;
+    margin-bottom: -10%;
+}
+.resposta2 img{
+    margin-top: -25%;
+    display: flex;
+    margin-left: 20%;
+    margin-bottom: -10%;
+}
+.resposta3 img{
+    margin-top: -25%;
+    display: flex;
+    margin-left: 31%;
+    margin-bottom: -10%;
+}
+.resposta1{
+    background-color: #FF81A7;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.4);
+}
+.resposta2{
+    background-color: #E1A500;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.4);
+}
+.resposta3{
+    background-color: #394EDE;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.4);
+}
+section .pergunta{
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15%;
+    font-size: 38px;
+    color: whitesmoke;
+}
+.duvidas p{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    font-size: 28px;
+}
+section .resposta1{
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: whitesmoke;
+    margin-left: 2%;
+}
+section .resposta2{
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: whitesmoke;
+}
+section .resposta3{
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: whitesmoke;
+}
+/* Aqui termina as dúvidas */
+/* Aqui começa a calculadora  */
+#titlecalculadora{
+    width: 100%;
+}
+#titlecalculadora h1{
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 56px;
+    text-align: center;
+    margin-top: 3%;
+    width: 90%;
+    color: white;
+}
+#calculadora{
+    width: 90%;
+    height: 750px;
+    background: linear-gradient(135deg, #ffb800 0%, #ff6b9d 100%);
+    margin-left: 5%;
+    margin-top: 2%;
+    border-radius: 70px 30px 70px 30px;
+    padding-top: 3%;
+}
+#infos{
+    width: 40%;
+    height: 85%;
+    margin-left: 4%;
+    padding-top: 3%;
+
+}
+.valor-inicial{
+    color: black;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: white;
+    width: 100%;
+    float: left;
+}
+#valor-inicial{
+    width: 100%;
+    height: 10%;
+    margin-top: 3%;
+
+}
+#input-valor-inicial{
+    font-size: 22px;
+    margin-top: 3%;
+    background-color: transparent;
+    border: 2px solid #00ff1e 0.3;
+}
+/* Aqui termina a calculadora */
