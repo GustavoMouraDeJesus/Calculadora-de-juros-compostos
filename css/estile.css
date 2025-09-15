@@ -214,7 +214,7 @@ section .resposta3{
     margin-left: 4%;
 }
 
-#calculadora label{
+#infos label{
     color: black;
     font-family: "Nunito", sans-serif;
     font-weight: bold;
@@ -223,7 +223,29 @@ section .resposta3{
     float: left;
     margin-top: 7%;
 }
-#calculadora input{
+#infos input{
+    font-size: 22px;
+    margin-top: 3%;
+    border: 3px solid rgb(199, 196, 196);
+    border-radius: 10px;
+    height: 60px;
+}
+#resultados{
+    width: 40%;
+    height: 85%;
+    margin-left: 60%;
+}
+
+#resultados label{
+    color: black;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    width: 100%;
+    float: left;
+    margin-top: 7%;
+}
+#resultados input{
     font-size: 22px;
     margin-top: 3%;
     border: 3px solid rgb(199, 196, 196);
