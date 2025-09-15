@@ -9,7 +9,7 @@
 /* Aqui começa a config do site */
 body{
     background: linear-gradient(135deg, #1DB584 0%, #FF6B9D 130%);
-    min-height: 300vh;
+    min-height: 250vh;
     color: #333;
 }
 /* Aqui termina a config do site */
@@ -237,7 +237,7 @@ nav a:hover{
             margin-left: 3%;
             margin-top: 5%;
             padding: 1rem 2rem;
-            font-size: 1.2rem;
+            font-size: 2rem;
             font-weight: bold;
             border-radius: 25px;
             cursor: pointer;
@@ -337,3 +337,149 @@ nav a:hover{
         margin-top: 20px;
     }
 }
+/* Aqui começa o footer */
+
+footer {
+    position: relative;
+    width: 100%;
+    margin-top: 10%;
+    overflow: hidden;
+}
+
+.fundo {
+    position: relative;
+    width: 100%;
+}
+
+.fundo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.logo-do-footer {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    text-align: center;
+}
+
+.logo-do-footer img {
+    width: 180px;
+    height: auto;
+    margin-left: -370%;
+    margin-top: 50%;
+}
+
+.footer-content {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    color: white;
+    font-family: "Nunito", sans-serif;
+}
+
+.footer-main-content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4%;
+    width: 100%;
+    margin-left: 60%;
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.footer-section p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: white;
+}
+
+.contato p {
+    line-height: 1.6;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #FFB800;
+    transform: translateY(-3px);
+}
+
+.direitos {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 4%;
+    width: 100%;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .footer-main-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .logo-do-footer {
+        top: 10%;
+    }
+    
+    .logo-do-footer img {
+        width: 140px;
+    }
+    
+    .footer-content {
+        top: 40%;
+    }
+    
+    .footer-section h3 {
+        font-size: 1.3rem;
+    }
+    
+    .footer-section p {
+        font-size: 1rem;
+    }
+    
+    .social-icons {
+        gap: 1.2rem;
+    }
+    
+    .social-icons a {
+        font-size: 1.8rem;
+    }
+    
+    .direitos {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+}
+
+/* Aqui termina o footer */
