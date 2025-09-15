@@ -106,150 +106,234 @@ nav a:hover{
 }
 /* Aqui termina o banner do site */
 /* Aqui começa as dúvidas */
-section{
+.duvidas {
     display: flex;
     justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 2rem;
 }
-section div{
-    width: 25%;
+
+.duvidas > div {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
     height: 350px;
-    margin-top: 5%;
-    float: left;
-}
-.resposta1 img{
-    margin-top: -25%;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.4);
     display: flex;
-    margin-left: 31%;
-    margin-bottom: -10%;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    position: relative;
+    margin-top: 3%;
+}
+
+.resposta1 {
+    background-color: #FF81A7;
+}
+
+.resposta2 {
+    background-color: #E1A500;
+}
+
+.resposta3 {
+    background-color: #5A6EF5;
+}
+
+.duvidas img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-top: -150px;
+    margin-bottom: 1rem;
 }
 .resposta2 img{
-    margin-top: -25%;
-    display: flex;
-    margin-left: 20%;
-    margin-bottom: -10%;
+    width: 250px;
+    height: 250px;
 }
-.resposta3 img{
-    margin-top: -25%;
-    display: flex;
-    margin-left: 31%;
-    margin-bottom: -10%;
-}
-.resposta1{
-    background-color: #FF81A7;
-    border-radius: 20px;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.4);
-}
-.resposta2{
-    background-color: #E1A500;
-    border-radius: 20px;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.4);
-}
-.resposta3{
-    background-color: #394EDE;
-    border-radius: 20px;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.4);
-}
-section .pergunta{
+.duvidas .pergunta {
     font-family: "Nunito", sans-serif;
     font-weight: bold;
     text-align: center;
-    margin-top: 15%;
-    font-size: 38px;
+    font-size: 40px;
     color: whitesmoke;
+    margin-bottom: 1rem;
 }
-.duvidas p{
+
+.duvidas p {
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    font-size: 28px;
-}
-section .resposta1{
     font-family: "Nunito", sans-serif;
     font-weight: 600;
-    font-size: 24px;
-    text-align: center;
+    font-size: 30px;
     color: whitesmoke;
-    margin-left: 2%;
-}
-section .resposta2{
-    font-family: "Nunito", sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    text-align: center;
-    color: whitesmoke;
-}
-section .resposta3{
-    font-family: "Nunito", sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    text-align: center;
-    color: whitesmoke;
+    line-height: 1.4;
 }
 /* Aqui termina as dúvidas */
-/* Aqui começa a calculadora  */
-#titlecalculadora{
+/* Aqui começa a calculadora */
+#titlecalculadora {
     width: 100%;
+    margin-bottom: 2%;
 }
-#titlecalculadora h1{
+
+#titlecalculadora h1 {
     font-family: "Nunito", sans-serif;
     font-weight: bold;
     font-size: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin-top: 6%;
+    margin-left: 6%;
     width: 90%;
     color: white;
 }
-#calculadora{
+
+#calculadora {
     width: 90%;
     height: 750px;
     background: linear-gradient(135deg, #ffb800 0%, #ff6b9d 100%);
     margin-left: 5%;
     margin-top: 2%;
     border-radius: 70px 30px 70px 30px;
+    display: flex; /* Adicionando flexbox */
+    justify-content: space-between; /* Espaço entre as colunas */
+    padding: 2%; /* Adicionando padding interno */
 }
-#infos{
-    width: 40%;
-    height: 85%;
+
+#infos {
+    width: 45%;
+    height: 90%;
+    margin-top: -4%; /* Agora a margin-top funciona */
+    padding: 1%;
+}
+
+#infos label {
+    color: black;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    width: 100%;
+    display: block;
+    margin-top: 8%;
+}
+
+#infos input {
+    font-size: 18px;
+    width: 90%;
+    border: 3px solid rgb(199, 196, 196);
+    border-radius: 15px;
+    height: 60px;
+    margin-top: 1%;
+    padding: 0 10px;
+}
+/* Aqui começa o botão */
+
+.calculate-btn {
+            background: linear-gradient(135deg, #1DB584 0%, #FFB800 100%);
+            color: white;
+            border: none;
+            margin-left: 3%;
+            margin-top: 5%;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 80%;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(29, 181, 132, 0.3);
+        }
+
+        .calculate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(29, 181, 132, 0.4);
+        }
+
+/* Aqui começa o botão */
+#resultados {
+    width: 60%;
+    height: 100%;
+    background-color: #1DB584;
+    border-radius: 30px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#resultados label {
+    color: whitesmoke;
+    background-color: transparent;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    margin-left: 5%;
+}
+
+#resultados input {
+    font-size: 36px;
+    background-color: transparent;
+    color: whitesmoke;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    height: 60px;
     margin-left: 4%;
+    padding: 0 10px;
 }
-
-#infos label{
-    color: black;
-    font-family: "Nunito", sans-serif;
-    font-weight: bold;
-    font-size: 36px;
-    width: 100%;
-    float: left;
-    margin-top: 7%;
-}
-#infos input{
-    font-size: 22px;
-    margin-top: 3%;
-    border: 3px solid rgb(199, 196, 196);
-    border-radius: 10px;
-    height: 60px;
-}
-#resultados{
-    width: 40%;
-    height: 85%;
-    margin-left: 60%;
-}
-
-#resultados label{
-    color: black;
-    font-family: "Nunito", sans-serif;
-    font-weight: bold;
-    font-size: 36px;
-    width: 100%;
-    float: left;
-    margin-top: 7%;
-}
-#resultados input{
-    font-size: 22px;
-    margin-top: 3%;
-    border: 3px solid rgb(199, 196, 196);
-    border-radius: 10px;
-    height: 60px;
+.valor-final, .total-investido, .lucro-total, .rentabilidade{
+    background-color: rgba(254, 254, 254, 0.356);
+    height: 120px;
+    border-radius: 20px;    
 }
 /* Aqui termina a calculadora */
+
+/* Aqui começa os resultados */
+#resultados input[readonly] {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    border: none;
+    box-shadow: none;
+    pointer-events: none;
+}
+
+.valor-final, .total-investido, .lucro-total, .rentabilidade {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 120px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2;
+}
+
+.valor-final label, .total-investido label, 
+.lucro-total label, .rentabilidade label {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Melhorar a responsividade */
+@media (max-width: 768px) {
+    #calculadora {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    #infos, #resultados {
+        width: 100%;
+        margin: 0;
+    }
+    
+    #resultados {
+        margin-top: 20px;
+    }
+}

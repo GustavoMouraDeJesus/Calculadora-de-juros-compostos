@@ -65,38 +65,52 @@
   <!-- Aqui começa a calculadora -->
 
   <section id="titlecalculadora">
-    <h1>Faça sua simulação</h1>
-  </section>
+  <h1>Faça sua simulação</h1>
+</section>
 <div id="calculadora">
   <div id="infos">
-      <label class="valor-inicial" for="initial-value">Valor Inicial (R$)</label>
-      <input type="number" id="input-valor-inicial" placeholder="1000" value="1000">
-      <br>
-      <label class="aporte-mensal" for="initial-value">Aporte Mensal (R$)</label>
-      <input type="number" id="input-valor-inicial" placeholder="1000" value="1000">
-      <br>
-      <label class="taxa-de-juros" for="initial-value">Taxa de Juros Anual (%)</label>
-      <input type="number" id="input-valor-inicial" placeholder="1000" value="1000">
-      <br>
-      <label class="periodo" for="initial-value">Período (anos)</label>
-      <input type="number" id="input-valor-inicial" placeholder="1000" value="1000">
+    <label class="valor-inicial" for="valor-inicial">Valor Inicial (R$)</label>
+    <input type="number" id="valor-inicial" placeholder="1000">
+    <br>
+    <label class="aporte-mensal" for="aporte-mensal">Aporte Mensal (R$)</label>
+    <input type="number" id="aporte-mensal" placeholder="100">
+    <br>
+    <label class="taxa-de-juros" for="taxa-juros">Taxa de Juros Anual (%)</label>
+    <input type="number" id="taxa-juros" placeholder="8">
+    <br>
+    <label class="periodo" for="periodo">Período (anos)</label>
+    <input type="number" id="periodo" placeholder="10">
+
+    <button class="calculate-btn" onclick="calculateCompoundInterest()">
+      💰 CALCULAR AGORA
+    </button>
   </div>
   <div id="resultados">
-    <label class="valor-final" for="initial-value">Valor Final (R$)</label>
-      <input type="number" id="input-valor-inicial" placeholder="1000" value="1000">
-      <br>
-      <label class="total-investido" for="initial-value">Total Investido (R$)</label>
-      <input type="number" id="input-valor-inicial" placeholder="1000" value="1000">
-      <br>
-      <label class="lucro-total" for="initial-value">Lucro Total (R$)</label>
-      <input type="number" id="input-valor-inicial" placeholder="1000" value="1000">
-      <br>
-      <label class="rentabilidade" for="initial-value">Rentabilidade</label>
-      <input type="number" id="input-valor-inicial" placeholder="1000" value="1000">
+    <div class="valor-final">
+      <label for="resultado-valor-final">Valor Final (R$)</label>
+      <input type="text" id="resultado-valor-final" readonly>
+    </div>
+    <br>
+    <div class="total-investido">
+      <label for="resultado-total-investido">Total Investido (R$)</label>
+      <input type="text" id="resultado-total-investido" readonly>
+    </div>
+    <br>
+    <div class="lucro-total">
+      <label for="resultado-lucro-total">Lucro Total</label>
+      <input type="text" id="resultado-lucro-total" readonly>
+    </div>
+    <br>
+    <div class="rentabilidade">
+      <label for="resultado-rentabilidade">Rentabilidade</label>
+      <input type="text" id="resultado-rentabilidade" readonly>
+    </div>
   </div>
 </div>
 
   <!-- Aqui termina a calculadora -->
+
+  <script src="js/javascript.js"></script>
 
     <!-- VLibras -->
 <div vw class="enabled">
